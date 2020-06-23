@@ -4,8 +4,8 @@ import ProductoDetalles from "../components/layouts/ProductoDetalles";
 import useProductos from '../hooks/useProductos';
 
 
-const Home = () => {
-const {Productos}   = useProductos("creado")
+const Populares = () => {
+const {Productos}   = useProductos("votos")
 
   return (
     <div className="">
@@ -27,4 +27,4 @@ key={producto.id}
   );
 };
 
-export default Home;
+export default Populares;
